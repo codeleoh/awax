@@ -1,0 +1,21 @@
+*{
+    box-sizing:border-box;
+}
+
+body { /*Zerando o padding e margin*/
+    padding:0;
+    margin:0;
+}
+
+header { /*Colocando o fundo do header de preto, definindo altura e cor das fontes*/
+    height:100px;
+    background-color:#000;
+    color:#fff;
+}
+
+.header { /*Limites do espaçamento do conteúdo e centralização do mesmo.*/
+    max-width:1140px;
+    background-color:#faf;
+    height:20px;
+    margin:auto;
+}
