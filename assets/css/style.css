@@ -1,4 +1,5 @@
 *{ /*Zerando o padding e margin*/
+    font-family:'Montserrat', Arial, Helvetica, sans-serif;
     box-sizing:border-box;
     padding:0;
     margin:0;
@@ -22,14 +23,40 @@ header { /*Colocando o fundo do header de preto, definindo altura e cor das font
     width:100px;
 }
 
+.logoimg { /*Taamnho e cor da logo*/
+    height:80px;
+    width:80px;
+    background-color:#b28756;
+}
+
 .menu { /*Posicionamento do menu e preenchimento do espaço*/
     flex:1;
     display:flex;
     justify-content:flex-end;
 }
 
-.logoimg { /*Taamnho e cor da logo*/
-    height:80px;
-    width:80px;
-    background-color:#b28756;
+.menu ul,
+.menu li { /*Estilizando a lista*/
+    list-style:none;
+}
+
+.menu ul { /*Tornando o conteúdo da lista flexível*/
+    display:flex;
+}
+
+.menu li a { /*Centralizando a lista no espaço do menu, deixando texto em maiúsculo, semi-bold, espaçamento e borda preta*/
+    display:flex;
+    align-items:center;
+    height:100px;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:600;
+    color:#fff;
+    padding:0px 7px;
+    border-bottom:5px solid #000;
+}
+
+.menu li a:hover,
+.menu .active a { /*Modificando a borda quando estiver com o mouse em cima e quando o item do menú estiver ativo*/
+    border-bottom:5px solid #b28756;
 }
