@@ -1,8 +1,5 @@
-*{
+*{ /*Zerando o padding e margin*/
     box-sizing:border-box;
-}
-
-body { /*Zerando o padding e margin*/
     padding:0;
     margin:0;
 }
@@ -14,8 +11,25 @@ header { /*Colocando o fundo do header de preto, definindo altura e cor das font
 }
 
 .header { /*Limites do espaçamento do conteúdo e centralização do mesmo.*/
+    display:flex;
     max-width:1140px;
-    background-color:#faf;
-    height:20px;
+    height:100px;
     margin:auto;
+    align-items:center;
+}
+
+.logo { /*Definindo a algura da área da logo*/
+    width:100px;
+}
+
+.menu { /*Posicionamento do menu e preenchimento do espaço*/
+    flex:1;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.logoimg { /*Taamnho e cor da logo*/
+    height:80px;
+    width:80px;
+    background-color:#b28756;
 }
