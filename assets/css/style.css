@@ -59,4 +59,13 @@ header { /*Colocando o fundo do header de preto, definindo altura e cor das font
 .menu li a:hover,
 .menu .active a { /*Modificando a borda quando estiver com o mouse em cima e quando o item do menú estiver ativo*/
     border-bottom:5px solid #b28756;
+    color:#ccc;
+}
+
+.banner { /*Aplicando a altura do banner para ser ajustada ao tamanho de qualquer monitor, tamanho e posicionamento do banner*/
+    height:calc(100vh - 100px);
+    background-color:#333;
+    background-image:url('../images/bg.jpg');
+    background-size:cover;
+    background-position:bottom;
 }
