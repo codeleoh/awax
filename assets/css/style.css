@@ -29,6 +29,7 @@ header { /*Colocando o fundo do header de preto, definindo altura e cor das font
     height:80px;
     width:80px;
     background-color:#b28756;
+    border-radius:40px;
 }
 
 .menu { /*Posicionamento do menu e preenchimento do espaço*/
@@ -83,4 +84,42 @@ header { /*Colocando o fundo do header de preto, definindo altura e cor das font
     height:100%;
     display:inline-block;
     background-color:rgba(0, 0, 0, 0.8);
+}
+
+.banner .slidearea { /*Conteúdo flexível, conteúdo centralizado no meio tanto na horizontal quanto na vertical e coloração do título*/
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+}
+
+.banner h1 { /*Texto em maiúsculo, negrido e aumento do tamanho das letras*/
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:50px;
+}
+
+.banner h1 span { /*Mudando a cor da palavra*/
+    color:#b28756;
+}
+
+.banner h2 { /*Texto em maiúsculo e espaçamento na margem*/
+    text-transform:uppercase;
+    margin-top:15px;
+}
+
+.banner a { /*Estilização do botão, cor do espaçamento e letra, tamanho da letra, bold e arredondamento das pontas*/
+    display:block;
+    background-color:#b28756;
+    color:#fff;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:600;
+    font-size:12px;
+    padding:10px 30px;
+    margin-top:30px;
+    border-radius:15px;
+
 }
