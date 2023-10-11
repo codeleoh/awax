@@ -123,3 +123,26 @@ header { /*Colocando o fundo do header de preto, definindo altura e cor das font
     border-radius:15px;
 
 }
+
+.banner .sliders-pointers { /*Definindo a área que os pontos vão ficar e o seu posicionamento na tela, juntamente com os seu espaçamento*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100vw;
+    height:20px;
+    position:absolute;
+    margin-top:-50px;
+    gap:10px;
+}
+
+.banner .pointer { /*Tamanho dos pontos, cor da borda e aparecer como um cursor quando o mouse estiver em cima*/
+    height:15px;
+    width:15px;
+    border:2px solid #b28756;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.banner .pointer.active { /*Cor quando for clicado*/
+    background-color:#b28756;
+}
