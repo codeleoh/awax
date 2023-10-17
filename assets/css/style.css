@@ -149,6 +149,47 @@ header { /*Colocando o fundo do header de preto, definindo altura e cor das font
     background-color:#b28756;
 }
 
-.default {
-    background-color:red;
+.default { /*Padrozização*/
+    padding:50px 0;
+}
+
+.default .section-title,
+.default .section-desc { /*Centralização dos textos*/
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:600;
+}
+
+.default .section-title { /*Tamanho do título*/
+    font-size:20px;
+}
+
+.default .section-desc { /*Cor, tamanho e margins da descrição*/
+    color:#464545;
+    font-size:12px;
+    margin-top:10px;
+    margin-bottom:40px;
+}
+
+.default .section-body { /*Centralização do conteúdo e tamanho máximo da largura*/
+    background-color:gray;
+    max-width:1140px;
+    margin:auto;
+    height:100px;
+}
+
+.default.light {
+    background-color:#f7f7f7;
+}
+
+.default.light .section-title {
+    color:#000;
+}
+
+.default.dark {
+    background-color:#000;
+}
+
+.default.dark .section-title{
+    color:#fff;
 }
