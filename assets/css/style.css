@@ -5,7 +5,9 @@
     margin:0;
 }
 
-
+body {
+    overflow-x:hidden;
+}
 
 header { /*Colocando o fundo do header de preto, definindo altura e cor das fontes*/
     height:100px;
@@ -145,4 +147,8 @@ header { /*Colocando o fundo do header de preto, definindo altura e cor das font
 
 .banner .pointer.active { /*Cor quando for clicado*/
     background-color:#b28756;
+}
+
+.default {
+    background-color:red;
 }
