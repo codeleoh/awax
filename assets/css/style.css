@@ -67,6 +67,20 @@ header { /*Colocando o fundo do header de preto, definindo altura e cor das font
     color:#ccc;
 }
 
+.button { /*Estilização do botão, cor do espaçamento e letra, tamanho da letra, bold e arredondamento das pontas*/
+    display:inline-block;
+    background-color:#b28756;
+    color:#fff;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:600;
+    font-size:12px;
+    padding:10px 30px;
+    margin-top:30px;
+    border-radius:15px;
+
+}
+
 .banner { /*Aplicando a altura do banner para ser ajustada ao tamanho de qualquer monitor, tamanho e posicionamento do banner*/
     height:calc(100vh - 100px);
     background-color:#333;
@@ -110,20 +124,6 @@ header { /*Colocando o fundo do header de preto, definindo altura e cor das font
 .banner h2 { /*Texto em maiúsculo e espaçamento na margem*/
     text-transform:uppercase;
     margin-top:15px;
-}
-
-.banner a { /*Estilização do botão, cor do espaçamento e letra, tamanho da letra, bold e arredondamento das pontas*/
-    display:block;
-    background-color:#b28756;
-    color:#fff;
-    text-decoration:none;
-    text-transform:uppercase;
-    font-weight:600;
-    font-size:12px;
-    padding:10px 30px;
-    margin-top:30px;
-    border-radius:15px;
-
 }
 
 .banner .sliders-pointers { /*Definindo a área que os pontos vão ficar e o seu posicionamento na tela, juntamente com os seu espaçamento*/
@@ -172,24 +172,51 @@ header { /*Colocando o fundo do header de preto, definindo altura e cor das font
 }
 
 .default .section-body { /*Centralização do conteúdo e tamanho máximo da largura*/
-    background-color:gray;
     max-width:1140px;
     margin:auto;
-    height:100px;
 }
 
-.default.light {
+.default.light { /*Se default for light, então o fundo é branco*/
     background-color:#f7f7f7;
 }
 
-.default.light .section-title {
+.default.light .section-title,
+.default.light .section-body { /*Se default for light, então o título será preto*/
     color:#000;
 }
 
-.default.dark {
+.default.dark { /*Se default for dark, então o fundo é preto*/
     background-color:#000;
 }
 
-.default.dark .section-title{
+.default.dark .section-title, 
+.default.dark .section-body { /*Se default for dark, então o título sera branco*/
     color:#fff;
+}
+
+/*
+ÁREAS ESPECIFICAS
+*/
+
+.section-aboutus { /*Torna o conteúdo flexível*/
+    display:flex;
+}
+
+.section-aboutus--left {
+    flex:1;
+}
+
+.section-aboutus--left p { /*Tamanho da fonte do texto e espaçamento entre as linhas do texto*/
+    font-size:14px;
+    line-height:23px;
+}
+
+.section-aboutus--right {/*Tamanho do espaço do conteúdo e centralização do conteúdo*/
+    width:520px;
+    text-align:center;
+}
+
+.section-aboutus--right img { /*Tamanho da imagem e sombra ao redor da imagem*/
+    width:480px;
+    box-shadow:0px 5px 15px #222;
 }
