@@ -291,3 +291,48 @@ header { /*Colocando o fundo do header de preto, definindo altura e cor das font
 .section-projects-filters li:first-child { /*Sem borda no primeiro item*/
     border-left:0;
 }
+
+.section-projects-photos { /*A área terá o tamanho da tela, porém terá um limite, conteúdo centralizado e ajustando os contéudos para baixo caso não caiba todos na linha*/
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    width:100vw;
+    max-width:1140px;
+    margin-top:20px;
+}
+
+.section-projects-photo { /*Tamanho da área da foto*/
+    width:280px;
+}
+
+.section-projects-photoarea { /*Tamanho da área da foto e espaçamento*/
+    margin:10px;
+    width:260px;
+    height:160px;
+}
+
+.section-projects-photoarea img { /*Herdando o tamanho da area da foto*/
+    width:inherit;
+    height:inherit;
+}
+
+.section-projects-photoinfo { /*Posição absoluta, background um pouco escurecido. tamanho herdado da foto da área, display none e for da fonte branca*/
+    position:absolute;
+    background-color:rgba(0, 0, 0, 0.5);
+    width:inherit;
+    height:inherit;
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+}
+
+.section-projects-photoinfo h5 { /*Tamanho e peso da fonte*/
+    font-size:18px;
+    font-weight:600;
+}
+
+.section-projects-photoarea:hover .section-projects-photoinfo { /*Deixa o diplay flexível quando mouse tá em cima. Isso ativará os textos dentro da foto*/
+    display:flex;
+}
