@@ -221,33 +221,73 @@ header { /*Colocando o fundo do header de preto, definindo altura e cor das font
     box-shadow:0px 5px 15px #222;
 }
 
-.section-services {
+.section-services { /*Deixa o conteúdo flexível*/
     display:flex;
 }
 
-.service {
+.service { /*Os conteúdos service ocupam o mesmo espaço, ficam centralizado com bordas na direita*/
     flex:1;
     text-align:center;
     border-right:1px solid #333;
     padding:15px;
 }
 
-.service:first-child{
+.service:first-child{ /*Uma borda no primeiro conteúdo service na esquerda*/
     border-left:1px solid #333;
 }
 
-.service img {
+.service img { /*Aumentou a altura da imagem*/
     height:60px;
 }
 
-.service h4 {
+.service h4 { /*Aumenta o tamanho da letra, transfoma todas letras em maiúsculo e espamaneto em cima da frase*/
     margin-top:20px;
     text-transform:uppercase;
     font-size:18px;
 }
 
-.service p {
+.service p { /*Coloração da fonte, tamanho da fonte e espaçamento*/
     margin-top:5px;
     font-size:13px;
     color:#999;
+}
+
+
+.section-projects { /*Centralização e conteúdos em colunas*/
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.section-projects-filters { /*Borda, fundo da borda, arredondamento dos cantos das bordas e espaçamento*/
+    border:1px solid #ccc;
+    background-color:#eee;
+    border-radius:30px;
+    display:inline-block;
+    padding:0px 20px;
+}
+
+.section-projects-filters ul,
+.section-projects-filters li { /*Estilo da lista sem a bola que indica cada item*/
+    list-style:none;
+}
+
+.section-projects-filters li { /*Texto em maiúsculo, borda para a esquerda e embaixo, cursor clicavel quando o mouse estiver em cima do item e cor do texto*/
+    display:inline-block;
+    padding:10px;
+    text-transform:uppercase;
+    font-size:13px;
+    border-left:1px solid #ccc;
+    color:#555;
+    border-bottom:3px solid #eee;
+    cursor:pointer;
+}
+
+.section-projects-filters li:hover,
+.section-projects-filters li.active { /*Borda quando o conteúdo estiver ativado e quando o mouse estiver em cima do item*/
+    border-bottom:3px solid #b28756;
+}
+
+.section-projects-filters li:first-child { /*Sem borda no primeiro item*/
+    border-left:0;
 }
