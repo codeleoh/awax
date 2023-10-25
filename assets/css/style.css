@@ -336,3 +336,19 @@ header { /*Colocando o fundo do header de preto, definindo altura e cor das font
 .section-projects-photoarea:hover .section-projects-photoinfo { /*Deixa o diplay flexível quando mouse tá em cima. Isso ativará os textos dentro da foto*/
     display:flex;
 }
+
+.bg-team { /*Imagem de fundo preenchendo toda área e centralizada*/
+    background-image:url('../images/bg.jpg');
+    background-size:cover;
+    background-position:center;
+    padding:0;
+}
+
+.section-team-area { /*Fundo preto com um leve transparencia para aparecer a imagem atras*/
+    background-color:rgba(0, 0, 0, 0.8);
+    padding:50px 0;
+}
+
+.section-team-area .section-desc { /*Cor branca na fonte da descrição*/
+    color:#fff;
+}
