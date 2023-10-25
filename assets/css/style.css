@@ -352,3 +352,52 @@ header { /*Colocando o fundo do header de preto, definindo altura e cor das font
 .section-team-area .section-desc { /*Cor branca na fonte da descrição*/
     color:#fff;
 }
+
+.section-team { /*Centralização do conteúdo, esconder espaço não utilizado e limite máximo de largura*/
+    overflow:hidden;
+    max-width:880px;
+    margin:auto;
+}
+
+.section-team .sliders { /*Tamanho suficiente para caber todos os sliders*/
+    width:10000vw;
+}
+
+.section-team .slide { /*Tamanho de cada slide e coloração preta transparente*/
+    width:280px;
+    height:100%;
+    min-height:300px;
+    display:inline-block;
+    background-color:#fff;
+    margin-right:20px;
+}
+
+.section-team .slidearea { /*Conteúdo flexível, conteúdo centralizado no meio tanto na horizontal quanto na vertical e coloração do título*/
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+}
+
+.section-team-area .sliders-pointers { /*Definindo a área que os pontos vão ficar e o seu posicionamento na tela, juntamente com os seu espaçamento*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:20px;
+    gap:10px;
+    margin-top:30px;
+}
+
+.section-team-area .pointer { /*Tamanho dos pontos, cor da borda e aparecer como um cursor quando o mouse estiver em cima*/
+    height:15px;
+    width:15px;
+    border:2px solid #b28756;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.section-team-area .pointer.active { /*Cor quando for clicado*/
+    background-color:#b28756;
+}
