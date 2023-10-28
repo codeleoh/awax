@@ -403,31 +403,31 @@ header { /*Colocando o fundo do header de preto, definindo altura e cor das font
     background-color:#b28756;
 }
 
-.section-team-avata {
+.section-team-avata { /*Tamanho da imagem do avatar*/
     width:150px;
     height:auto;
 }
 
-.section-team-name {
+.section-team-name { /*Tamanho, peso e transformação da fonte, espaçamento no topo*/
     text-transform:uppercase;
     font-weight:600;
     font-size:17px;
     margin-top:30px;
 }
 
-.section-team-role {
+.section-team-role { /*Tamanho e cor da fonte, espaçamento no topo*/
     font-size:14px;
     color:#777;
     margin-top:3px;
 }
 
-.section-team-social {
+.section-team-social { /*Elementos flexíveis, espaçamento entre os elementos e espaçamento no topo*/
     display:flex;
     gap:10px;
     margin-top:20px;
 }
 
-.section-team-social a {
+.section-team-social a { /*Flexibilização e centralização dos elementos, tamanho, cor e arredondamento da borda*/
     display:inline-flex;
     justify-content:center;
     align-items:center;
@@ -437,6 +437,6 @@ header { /*Colocando o fundo do header de preto, definindo altura e cor das font
     background-color:#ccc;
 }
 
-.section-team-social a:hover {
+.section-team-social a:hover { /*Mudar a cor quando o mouse passar em cima*/
     background-color:#b28756;
 }
