@@ -440,3 +440,74 @@ header { /*Colocando o fundo do header de preto, definindo altura e cor das font
 .section-team-social a:hover { /*Mudar a cor quando o mouse passar em cima*/
     background-color:#b28756;
 }
+
+
+.happyclients {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.section-client-area {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.section-client-area .section-client-avatar {
+    width:125px;
+    margin-top:10px;
+}
+
+.section-client-area .section-client-name,
+.section-team-role {
+    text-transform:none;
+}
+
+.section-client-area .section-client-name {
+    font-weight:800;
+    margin-top:20px;
+    font-size:20px;
+}
+
+.section-client-area .section-client-role {
+    font-weight:600;
+    color:#3b3a3a;
+}
+
+.section-client-cita {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:1000px;
+}
+
+.client-cita {
+    color:#555;
+    font-size:12px;
+    text-align:center;
+    margin-top:30px;
+    font-weight:400;
+}
+
+.section-client .sliders-pointers {
+    display:flex;
+    width:80px;
+    margin:auto;
+    margin-top:50px;
+}
+
+.section-client .pointer {
+    height:15px;
+    width:15px;
+    border:2px solid #b28756;
+    border-radius:8px;
+    cursor:pointer;
+    margin:auto;
+}
+
+.section-client .pointer.active { /*Cor quando for clicado*/
+    background-color:#b28756;
+}
