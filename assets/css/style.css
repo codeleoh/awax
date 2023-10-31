@@ -511,3 +511,86 @@ header { /*Colocando o fundo do header de preto, definindo altura e cor das font
 .section-client .pointer.active { /*Cor quando for clicado*/
     background-color:#b28756;
 }
+
+.section-icons .icons{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    padding:50px 0;
+}
+
+.section-price .section-price-area {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:#ebe6e6;
+    padding-bottom:30px;
+}
+
+.section-price-area .section-title {
+    padding-top:30px;
+    font-family:800;
+    font-size:20px;
+}
+
+.table {
+    display:flex;
+    width:1140px;
+    justify-content:space-between;
+}
+
+.section-table-area .table-price {
+    text-align:center;
+    background-color:#fff;
+    width:200px;
+    height:300px;
+}
+
+.table-price .price-name {
+    font-size:12px;
+    text-transform:uppercase;
+    font-weight:600;
+    padding-top:30px;
+}
+
+.table-price .price-valor {
+    font-size:25px;
+    font-weight:800;
+    margin-top:10px;
+}
+
+.table-price .price-month {
+    font-size:12px;
+    font-weight:600;
+    color:#777;
+}
+
+.table-price .price-descs {
+    margin-top:20px;
+}
+
+.table-price .price-desc {
+    font-size:10px;
+    font-weight:600;
+    color:#444;
+    margin-top:10px;
+}
+
+.table-price .button {
+    display:inline-block;
+    background-color:#3b3a3a;
+    color:#fff;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:600;
+    font-size:12px;
+    padding:10px 30px;
+    margin-top:30px;
+    border-radius:15px;
+}
+
+.table-price .button:hover {
+    background-color:#b28756;
+}
+
